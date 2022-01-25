@@ -48,6 +48,10 @@ namespace VenWFV
             this.button2 = new System.Windows.Forms.Button();
             this.listBox6 = new System.Windows.Forms.ListBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.sortByTitleButton = new System.Windows.Forms.Button();
+            this.sortByGenreButton = new System.Windows.Forms.Button();
+            this.sortByArtistButton = new System.Windows.Forms.Button();
+            this.sortByReleaseButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -189,7 +193,7 @@ namespace VenWFV
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(525, 409);
+            this.button1.Location = new System.Drawing.Point(867, 343);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(165, 55);
             this.button1.TabIndex = 15;
@@ -199,7 +203,7 @@ namespace VenWFV
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(183, 409);
+            this.button2.Location = new System.Drawing.Point(12, 343);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(165, 55);
             this.button2.TabIndex = 16;
@@ -219,7 +223,7 @@ namespace VenWFV
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(354, 409);
+            this.button3.Location = new System.Drawing.Point(183, 343);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(165, 55);
             this.button3.TabIndex = 18;
@@ -227,12 +231,56 @@ namespace VenWFV
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // sortByTitleButton
+            // 
+            this.sortByTitleButton.Location = new System.Drawing.Point(12, 449);
+            this.sortByTitleButton.Name = "sortByTitleButton";
+            this.sortByTitleButton.Size = new System.Drawing.Size(165, 55);
+            this.sortByTitleButton.TabIndex = 19;
+            this.sortByTitleButton.Text = "Sort by Title";
+            this.sortByTitleButton.UseVisualStyleBackColor = true;
+            this.sortByTitleButton.Click += new System.EventHandler(this.sortByTitleButton_Click);
+            // 
+            // sortByGenreButton
+            // 
+            this.sortByGenreButton.Location = new System.Drawing.Point(183, 449);
+            this.sortByGenreButton.Name = "sortByGenreButton";
+            this.sortByGenreButton.Size = new System.Drawing.Size(165, 55);
+            this.sortByGenreButton.TabIndex = 20;
+            this.sortByGenreButton.Text = "Sort by Genre";
+            this.sortByGenreButton.UseVisualStyleBackColor = true;
+            this.sortByGenreButton.Click += new System.EventHandler(this.sortByGenreButton_Click);
+            // 
+            // sortByArtistButton
+            // 
+            this.sortByArtistButton.Location = new System.Drawing.Point(354, 449);
+            this.sortByArtistButton.Name = "sortByArtistButton";
+            this.sortByArtistButton.Size = new System.Drawing.Size(165, 55);
+            this.sortByArtistButton.TabIndex = 21;
+            this.sortByArtistButton.Text = "Sort by Artist";
+            this.sortByArtistButton.UseVisualStyleBackColor = true;
+            this.sortByArtistButton.Click += new System.EventHandler(this.sortByArtistButton_Click);
+            // 
+            // sortByReleaseButton
+            // 
+            this.sortByReleaseButton.Location = new System.Drawing.Point(525, 449);
+            this.sortByReleaseButton.Name = "sortByReleaseButton";
+            this.sortByReleaseButton.Size = new System.Drawing.Size(165, 55);
+            this.sortByReleaseButton.TabIndex = 22;
+            this.sortByReleaseButton.Text = "Sort by Release";
+            this.sortByReleaseButton.UseVisualStyleBackColor = true;
+            this.sortByReleaseButton.Click += new System.EventHandler(this.sortByReleaseButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1043, 656);
+            this.Controls.Add(this.sortByReleaseButton);
+            this.Controls.Add(this.sortByArtistButton);
+            this.Controls.Add(this.sortByGenreButton);
+            this.Controls.Add(this.sortByTitleButton);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.listBox6);
             this.Controls.Add(this.button2);
@@ -280,6 +328,10 @@ namespace VenWFV
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ListBox listBox6;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button sortByTitleButton;
+        private System.Windows.Forms.Button sortByGenreButton;
+        private System.Windows.Forms.Button sortByArtistButton;
+        private System.Windows.Forms.Button sortByReleaseButton;
     }
 }
 
