@@ -47,6 +47,7 @@ namespace VenWFV
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.listBox6 = new System.Windows.Forms.ListBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -192,7 +193,7 @@ namespace VenWFV
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(165, 55);
             this.button1.TabIndex = 15;
-            this.button1.Text = "Add Song";
+            this.button1.Text = "Force Add Undefined Artwork";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -216,12 +217,23 @@ namespace VenWFV
             this.listBox6.TabIndex = 17;
             this.listBox6.SelectedIndexChanged += new System.EventHandler(this.listBox6_SelectedIndexChanged);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(354, 409);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(165, 55);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "Add Song";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1140, 656);
+            this.ClientSize = new System.Drawing.Size(1043, 656);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.listBox6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -267,6 +279,7 @@ namespace VenWFV
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ListBox listBox6;
+        private System.Windows.Forms.Button button3;
     }
 }
 

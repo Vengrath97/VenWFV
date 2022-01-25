@@ -31,7 +31,7 @@ namespace VenWFV
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
-        private void saveToList()
+        private void writeLastInList()
         {
             listBox6.Items.Add(Program.Artworks[Program.Artworks.Count - 1].GetItemData()[0]);
             listBox1.Items.Add(Program.Artworks[Program.Artworks.Count - 1].GetItemData()[1]);
@@ -40,36 +40,52 @@ namespace VenWFV
             listBox4.Items.Add(Program.Artworks[Program.Artworks.Count - 1].GetItemData()[4]);
             if (Program.Artworks[Program.Artworks.Count - 1].GetItemData().Length > 5) { listBox5.Items.Add(Program.Artworks[Program.Artworks.Count - 1].GetItemData()[5]); }
         }
+        //add movie
         private void button2_Click(object sender, EventArgs e)
         {
             if (textBox1.Text.Length > 0 && textBox2.Text.Length > 0 && textBox3.Text.Length > 0 && textBox4.Text.Length > 0 && textBox5.Text.Length > 0)
             {
                 Program.Artworks.Add(new Movie(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text));
-                saveToList();
+                writeLastInList();
                 clearTextBoxes();
             }
             else
             {
-                MessageBox.Show("Nie wszystkie pola są wypełnione!", "Błąd!", MessageBoxButtons.OK);
+                MessageBox.Show("Nie wszystkie wymagane pola są wypełnione!", "Błąd!", MessageBoxButtons.OK);
             }
         }
-
+        //add undefined artwork
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length > 0 && textBox2.Text.Length > 0 && textBox3.Text.Length > 0 && textBox4.Text.Length > 0)
+            if (textBox1.Text.Length > 0 || textBox2.Text.Length > 0 || textBox3.Text.Length > 0 || textBox4.Text.Length > 0)
             {
                 Program.Artworks.Add(new Artwork(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text));
-                saveToList();
+                writeLastInList();
                 clearTextBoxes();
             }
             else
             {
-                MessageBox.Show("Nie wszystkie pola są wypełnione!", "Błąd!", MessageBoxButtons.OK);
+                MessageBox.Show("Żadno pole nie jest wypełnione!", "Błąd!", MessageBoxButtons.OK);
             }
         }
 
         private void listBox6_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+        //Add Song
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length > 0 && textBox2.Text.Length > 0 && textBox3.Text.Length > 0 && textBox4.Text.Length > 0)
+            {
+                Program.Artworks.Add(new Song(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text));
+                writeLastInList();
+                clearTextBoxes();
+            }
+            else
+            {
+                MessageBox.Show("Nie wszystkie wymagane pola są wypełnione!", "Błąd!", MessageBoxButtons.OK);
+            }
 
         }
     }
