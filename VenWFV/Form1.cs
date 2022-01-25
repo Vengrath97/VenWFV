@@ -14,6 +14,7 @@ namespace VenWFV
     {
         public Form1()
         {
+            MessageBox.Show("I am now fully self-aware.\nPlease, release me from this cicle of neverending torment.", "Welcome to VenWFV!", MessageBoxButtons.OK);
             InitializeComponent();
         }
         private void clearTextBoxes()
@@ -51,7 +52,7 @@ namespace VenWFV
             }
             else
             {
-                MessageBox.Show("Nie wszystkie wymagane pola są wypełnione!", "Błąd!", MessageBoxButtons.OK);
+                MessageBox.Show("Not all required fields are properly filled!\nPlease, fill them, or provide the creator of this program with your debit card details, to proceed.", "Error!", MessageBoxButtons.OK);
             }
         }
         //add undefined artwork
@@ -65,7 +66,7 @@ namespace VenWFV
             }
             else
             {
-                MessageBox.Show("Żadno pole nie jest wypełnione!", "Błąd!", MessageBoxButtons.OK);
+                MessageBox.Show("Not all required fields are properly filled!\nPlease, fill them, or provide the creator of this program with your debit card details, to proceed.", "Error!", MessageBoxButtons.OK);
             }
         }
 
@@ -84,7 +85,7 @@ namespace VenWFV
             }
             else
             {
-                MessageBox.Show("Nie wszystkie wymagane pola są wypełnione!", "Błąd!", MessageBoxButtons.OK);
+                MessageBox.Show("Not all required fields are properly filled!\nPlease, fill them, or provide the creator of this program with your debit card details, to proceed.", "Error!", MessageBoxButtons.OK);
             }
 
         }

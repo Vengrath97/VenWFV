@@ -146,9 +146,10 @@ namespace VenWFV
             this.label5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(696, 259);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 32);
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label5.Size = new System.Drawing.Size(134, 32);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Lead Actor";
+            this.label5.Text = "Additional";
             // 
             // textBox1
             // 
